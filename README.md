@@ -1,3 +1,3 @@
-# https://steamsales.github.io/SteamSales
+# https://steamsales.github.io/Steam-Sales
 
 Create by Outways (Crystallov)
