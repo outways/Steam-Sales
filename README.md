@@ -1,3 +1,3 @@
-# steamsales.github.io
+# https://steamsales.github.io
 
 Site
