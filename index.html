@@ -9,6 +9,7 @@
     <title>Steam Sales</title>
 </head>
 <body>
+    <div class="allcontent">
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'datesales')" id="defaultOpen">Даты распродаж</button>
         <button class="tablinks" onclick="openCity(event, 'liveactions')">Действующие акции</button>
@@ -17,15 +18,37 @@
 
       
       <div id="datesales" class="tabcontent"> 
-    <h1 class="h1doletney">До летней распродажи:</h1>
-    <div class="timer">
-        <div class="timer__items">
-          <div class="timer__item timer__days">00</div>
-          <div class="timer__item timer__hours">00</div>
-          <div class="timer__item timer__minutes">00</div>
-          <div class="timer__item timer__seconds">00</div>
+    <h1>До летней распродажи:</h1>
+
+    <div id="timer" class="timer col">
+        <div class="timer-section">
+         <div class="days-block">
+          <span class="days">00</span>
+         </div>
+         <span class="uncorrectDays">ДНЕЙ</span>
         </div>
-      </div>
+       
+        <div class="timer-section">
+         <div class="hours-block">
+          <span class="hours">00</span>
+         </div>
+         <span class="uncorrectHours">ЧАСОВ</span>
+         </div>
+       
+         <div class="timer-section">
+          <div class="minutes-block">
+           <span class="minutes">00</span>
+          </div>
+          <span class="uncorrectMinutes">МИНУТ</span>
+         </div>
+       
+         <div class="timer-section">
+          <div class="seconds-block">
+           <span class="seconds">00</span>
+          </div>
+          <span class="uncorrectSeconds">СЕКУНД</span>
+         </div>
+       </div>
     
         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Найти распродажу...">
         
@@ -53,7 +76,11 @@
     <h3>Создатель сайта - <a href="https://steamcommunity.com/id/Crystallov" target="_blank">Crystallov</a></h3>
     <p>Так же существует руководство в котором быстрее обновляются даты распродаж. Ссылка: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2818434259" target="_blank">https://steamcommunity.com/sharedfiles/filedetails/?id=2818434259</a></p> 
   </div>
-
+</div>
+<div class="mexpired">
+<h1>Сайт не поддержуется на Мобильных устройствах, пожалуйста зайдите на сайт через Компьютер</h1>
+<p>Если у вас не мобильное устройство, то возможно дело в том что у вас монитор не больше 1100 в ширину. Для полноценной работы сайта вы должны иметь дисплей минимум 1100px в ширену.</p>
+</div>
 <!--Timer -->
       <script src="js/timer.js"></script>
 <!--Hotbar -->

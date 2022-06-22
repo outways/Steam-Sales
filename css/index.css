@@ -74,36 +74,6 @@ a {
 }
 
 
-/* Timer */
-
-.timer__items {
-    display: flex;
-    font-size: 48px;
-  }
-  .timer__item {
-    position: relative;
-    min-width: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-bottom: 15px;
-    text-align: center;
-  }
-  .timer__item::before {
-    content: attr(data-title);
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    font-size: 14px;
-  }
-  .timer__item:not(:last-child)::after {
-    content: ':';
-    position: absolute;
-    right: -15px;
-  }
-
-
   /* Live Actions */
 
   #myInput {
@@ -139,3 +109,67 @@ a {
 #myUL li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
+
+/* Timer */
+
+.timer {
+    text-align: center;
+    height: 130px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(196, 196, 196, 0.8);
+    cursor: default;
+  }
+  
+  /*       текст под цифрами       */
+  .days, .hours, .minutes, .seconds {
+    font-size: 55px;
+    font-family: DS-Digital;
+    font-weight: 600;
+    margin: 0 auto;
+  }
+  
+  /*         цифры таймера         */
+  .uncorrectDays, .uncorrectHours,
+  .uncorrectMinutes, .uncorrectSeconds {
+    font-size: 18px;
+    font-family: 'Lato Light', sans-serif;
+  }
+  
+  /*      блоки хранящие цифры      */
+  .days-block, .hours-block, .minutes-block, .seconds-block {
+    background: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .timer-section {
+    display: inline-block;
+  }
+  
+  .timer-text {
+    display: block;
+    font-size: 12px;
+  }
+
+/* mobile adaptation */
+
+.mexpired {
+    visibility: hidden;
+    color: #Fff;
+    background-color: #5f5f5f;
+    border-radius: 7px;
+}
+@media only screen and (max-width: 1050px) {
+  .allcontent {
+     display: none;
+    }
+    .mexpired {
+        visibility: visible;
+    }
+  }
