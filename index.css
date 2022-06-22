@@ -78,7 +78,6 @@ text-decoration: none;
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 20px 12px;
   border: 1px solid #ccc;
   border-top: none;
 }
