@@ -79,6 +79,7 @@ text-decoration: none;
 .tabcontent {
   display: none;
   border: 1px solid #ccc;
+  padding: 10px 10px;
   border-top: none;
 }
 
