@@ -78,8 +78,8 @@ text-decoration: none;
 /* Style the tab content */
 .tabcontent {
   display: none;
-  border: 1px solid #ccc;
   padding: 10px 10px;
+  border: 1px solid #ccc;
   border-top: none;
 }
 
