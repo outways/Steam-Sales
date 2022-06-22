@@ -1,0 +1,111 @@
+body {
+  text-align: center;
+  background: #181818;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* Timer */
+
+.timerpadding {
+  margin-bottom: 10px;
+}
+  
+  /*       текст под цифрами       */
+  .days, .hours, .minutes, .seconds {
+    font-size: 55px;
+    margin: 0 auto;
+  }
+
+.timerfull {
+  margin-bottom: 2em;
+}
+
+.countdown-title {
+  color: rgb(255, 255, 255);
+  margin: 40px 0px 20px;
+}
+
+.countdown {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown-number {
+  padding: 10px;
+  border-radius: 3px;
+  background: #202020;
+  display: inline-block;
+}
+
+.countdown-time {
+  padding: 15px;
+  border-radius: 3px;
+  background: #3a3a3a;
+  display: inline-block;
+}
+
+.countdown-text {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.deadline-message{
+  display: none;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.visible{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
+
+.tool {
+  margin-right: auto;
+  margin-left: auto;
+  width: 350px;
+  color: white;
+  background-color: rgb(54, 54, 54);
+
+}
+
+.tool:hover {
+  background-color: #5f5f5f;
+}
+
+.bytyz {
+  color: white;
+  background-color: rgb(54, 54, 54);
+  text-decoration: none;
+}
+
+.bytyz:hover {
+  background-color: #5f5f5f;
+}
+
+@media only screen and (max-width: 550px) {
+  .tool {
+     width: auto;
+    }
+  }
+
+   #footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+
+   .othergroups {
+     padding: 3em;
+   }

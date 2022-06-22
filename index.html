@@ -5,71 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/timercss.css">
     <link rel="icon" type="image/png" href="steamico.png"/>
     <title>Steam Sales</title>
 </head>
 <body>
     <div class="allcontent">
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'datesales')" id="defaultOpen">Даты распродаж</button>
-        <button class="tablinks" onclick="openCity(event, 'liveactions')">Действующие акции</button>
-        <button class="tablinks" onclick="openCity(event, 'author')">Автор</button>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'datesales')" id="defaultOpen">Даты распродаж</button>
+            <button class="tablinks" onclick="openCity(event, 'liveactions')">Действующие акции</button>
+            <button class="tablinks" onclick="openCity(event, 'author')">Автор</button>
+          </div>
       </div>
 
       
       <div id="datesales" class="tabcontent"> 
-    <h1>До летней распродажи:</h1>
 
-    <div id="timer" class="timer col">
-        <div class="timer-section">
-         <div class="days-block">
-          <span class="days">00</span>
-         </div>
-         <span class="uncorrectDays">ДНЕЙ</span>
-        </div>
-       
-        <div class="timer-section">
-         <div class="hours-block">
-          <span class="hours">00</span>
-         </div>
-         <span class="uncorrectHours">ЧАСОВ</span>
-         </div>
-       
-         <div class="timer-section">
-          <div class="minutes-block">
-           <span class="minutes">00</span>
-          </div>
-          <span class="uncorrectMinutes">МИНУТ</span>
-         </div>
-       
-         <div class="timer-section">
-          <div class="seconds-block">
-           <span class="seconds">00</span>
-          </div>
-          <span class="uncorrectSeconds">СЕКУНД</span>
-         </div>
-       </div>
-    
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Найти распродажу...">
-        
-        <ul id="myUL">
-          <li><a href="https://www.youtube.com/watch?v=mYVcAn6Oj7Q" target="_blank">Летняя распродажа в Steam | 23 июня 20:00 (MSK) — 7 июля 20:00 (MSK)</a></li>
-          <li><a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3218394291609115018" target="_blank">Steam фестиваль VR | 18 июля 20:00 (MSK) — 25 июля 20:00 (MSK)</a></li>
-          <li><a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3222900587040657570" target="_blank">Фесиваль выживания в Steam | 1 августа 20:00 (MSK) — 8 августа 20:00 (MSK)</a></li>
-        </ul>
+<!-- Сам таймер --> 
+<div class="timerfull">
+<h1 class="countdown-title">До распродажи Steam ещё</h1>
+<div id="deadline-message" class="deadline-message">
+  <h1 style="color: rgb(0, 132, 255);">Распродажа "Летняя распродажа" началась!</h1>
+</div>
+<div id="countdown" class="countdown">
+  <div class="countdown-number">
+    <span class="days countdown-time"></span>
+    <span class="countdown-text">Дней</span>
+  </div>
+  <div class="countdown-number">
+    <span class="hours countdown-time"></span>
+    <span class="countdown-text">Часов</span>
+  </div>
+  <div class="countdown-number">
+    <span class="minutes countdown-time"></span>
+    <span class="countdown-text">Минут</span>
+  </div>
+  <div class="countdown-number">
+    <span class="seconds countdown-time"></span>
+    <span class="countdown-text">Секунд</span>
+  </div>
+</div>
+</div>
+    <!--Sales-->
+       <table id="tablesales">
+         <tr class="header">
+            <th style="width:60%;">Название</th>
+            <th style="width:40%;">Дата (MSK)</th>
+         </tr>
+         <tr>
+           <td><a href="https://www.youtube.com/watch?v=mYVcAn6Oj7Q" target="_blank">Летняя распродажа в Steam</a></td>
+           <td>23 июня 20:00 — 7 июля 20:00</td>
+         </tr>
+         <tr>
+            <td><a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3218394291609115018" target="_blank">Steam фестиваль VR</a></td>
+            <td>18 июля 20:00 — 25 июля 20:00</td>
+        </tr>
+        <tr>
+            <td><a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3222900587040657570" target="_blank">Фесиваль выживания в Steam</a></td>
+            <td>1 августа 20:00 — 8 августа 20:00</td>
+        </tr>
+       </table>
 </div>
 
 <div id="liveactions" class="tabcontent">
-<ul id="myUL">
-  <li><a href="https://store.steampowered.com/news/group/33273264/view/3219518928045377622" target="_blank">Monster Hunter Franchise Sale | До 23 июня 20:05 (MSK)</a></li>
-  <li><a href="https://store.steampowered.com/news/group/33016879/view/3219522887319047431" target="_blank">Nioh Franchise Sale | До 23 июня 19:55 (MSK)</a></li>
-  <li><a href="https://store.steampowered.com/news/group/36135791/view/3371521118495584552" target="_blank">Save up to 80%* on classic EA Titles | До 22 июня 20:00 (MSK)</a></li>
-  <li><a href="https://store.steampowered.com/news/group/6859518/view/3349002486202561687" target="_blank">Bithell Games Anniversary Sale | До 22 июня 20:00 (MSK)</a></li>
-  <li><a href="https://store.steampowered.com/news/group/32989971/view/5121164596158911629" target="_blank">11 bit studios Publisher Sale and games showcase is live now | До 7 июля 20:00 (MSK)</a></li>
-  <li><a href="https://store.steampowered.com/news/group/28981418/view/3334366421583073981" target="_blank">Raw Fury Summer Sale | До 7 июля 20:15 (MSK)</a></li>
-  <li><a href="https://store.steampowered.com/news/group/32398519/view/3183492678622178706" target="_blank">Kagura Games Publisher Sale! | До 24 июля 20:00 (MSK)</a></li>
-  <li><a href="https://store.steampowered.com/news/group/36333614/view/3371521752629338410" target="_blank">Relic 25th Anniversary Sale | До 23 июля 20:00 (MSK)</a></li>
-</ul>
+    <!--Actions-->
+    <input type="text" id="searchactions" onkeyup="myFunction()" placeholder="Найти акцию..." title="Сюда пиши лол">
+    <table id="tableactions">
+      <tr class="header">
+        <th style="width:60%;">Название</th>
+        <th style="width:40%;">Дата (MSK)</th>
+      </tr>
+      <tr>
+        <td><a href="https://store.steampowered.com/news/group/33273264/view/3219518928045377622" target="_blank">Monster Hunter Franchise Sale</a></td>
+        <td>До 23 июня 20:05</td>
+      </tr>
+      <tr>
+        <td><a href="https://store.steampowered.com/news/group/33016879/view/3219522887319047431" target="_blank">Nioh Franchise Sale</a></td>
+        <td>До 23 июня 19:55</td>
+      </tr>
+      <tr>
+        <td><a href="https://store.steampowered.com/news/group/36135791/view/3371521118495584552" target="_blank">Save up to 80%* on classic EA Titles</a></td>
+        <td>До 22 июня 20:00</td>
+      </tr>
+      <tr>
+        <td><a href="https://store.steampowered.com/news/group/6859518/view/3349002486202561687" target="_blank">Bithell Games Anniversary Sale</a></td>
+        <td>До 23 июня 20:30</td>
+      </tr>
+      <tr>
+        <td><a href="https://store.steampowered.com/news/group/32989971/view/5121164596158911629" target="_blank">11 bit studios Publisher Sale and games showcase is live now	</a></td>
+        <td>До 7 июля 20:00</td>
+      </tr>
+      <tr>
+        <td><a href="https://store.steampowered.com/news/group/28981418/view/3334366421583073981" target="_blank">Raw Fury Summer Sale</a></td>
+        <td>До 7 июля 20:15</td>
+      </tr>
+      <tr>
+        <td><a href="https://store.steampowered.com/news/group/32398519/view/3183492678622178706" target="_blank">Kagura Games Publisher Sale!</a></td>
+        <td>До 24 июля 20:00</td>
+      </tr>
+      <tr>
+        <td><a href="https://store.steampowered.com/news/group/36333614/view/3371521752629338410" target="_blank">Relic 25th Anniversary Sale</a></td>
+        <td>До 23 июля 20:00</td>
+      </tr>
+    </table>
 </div>
 
 <div id="author" class="tabcontent">
@@ -77,12 +116,28 @@
     <p>Так же существует руководство в котором быстрее обновляются даты распродаж. Ссылка: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2818434259" target="_blank">https://steamcommunity.com/sharedfiles/filedetails/?id=2818434259</a></p> 
   </div>
 </div>
-<div class="mexpired">
-<h1>Сайт не поддерживается на Мобильных устройствах, пожалуйста зайдите на сайт через Компьютер</h1>
-<p>Если у вас не мобильное устройство, то возможно дело в том что у вас монитор не больше 1100 в ширину. Для полноценной работы сайта вы должны иметь дисплей минимум 1100px в ширину.</p>
-</div>
 <!--Timer -->
-      <script src="js/timer.js"></script>
+      <script src="js/sales/timer.js"></script>
+<!--SearchActions-->
+<script>
+    function myFunction() {
+var input, filter, table, tr, td, i;
+input = document.getElementById("searchactions");
+filter = input.value.toUpperCase();
+table = document.getElementById("tableactions");
+tr = table.getElementsByTagName("tr");
+for (i = 0; i < tr.length; i++) {
+  td = tr[i].getElementsByTagName("td")[0];
+  if (td) {
+    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }       
+}
+}
+  </script>
 <!--Hotbar -->
       <script>
         function openCity(evt, cityName) {
@@ -102,27 +157,6 @@
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
         </script>
-<!--Search Script -->
-<script>
-    function myFunction() {
-        // Declare variables
-        var input, filter, ul, li, a, i;
-        input = document.getElementById('myInput');
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName('li');
-    
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-        }
-    }
-    </script>
 
 
 </body>
