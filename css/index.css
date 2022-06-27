@@ -154,10 +154,6 @@ text-decoration: none;
   #tableactions tr.header, #tableactions tr:hover {
     background-color: #3a3a3a;
   }
-
-  .txtdownload {
-	text-decoration: none;
-  }
   
   .author {
     text-align: center;
