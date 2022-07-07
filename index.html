@@ -48,13 +48,13 @@
 </div>
 </div>
     <!--Sales-->
-       <table include="sales.html" id="tablesales"> </table>
+       <table include="datasales/sales.html" id="tablesales"> </table>
 </div>
 
 <div id="liveactions" class="tabcontent">
     <!--Actions-->
     <input type="text" id="searchactions" onkeyup="myFunction()" placeholder="Найти акцию..." title="Сюда пиши лол">
-    <table include="actions.html" id="tableactions"> </table>
+    <table include="datasales/actions.html" id="tableactions"> </table>
 </div>
 
 <div id="author" class="tabcontent">
@@ -70,7 +70,7 @@
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("eblan");
+  z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
     /*search for elements with a certain atrribute:*/
