@@ -1,4 +1,4 @@
-# [Steam-Sales Site](https://outways.github.io/Steam-Sales) ⬅ Нажми что бы перейти на сайт
+# [Steam-Sales Site](https://outways.github.io/Steam-Sales) ⬅ Нажми чтобы перейти на сайт
 
 Create by Outways (Crystallov)
 
