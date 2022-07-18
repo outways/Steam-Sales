@@ -1,3 +1,6 @@
+AddHandler cgi-script .html .htm
+AddHandler fcgid-script .html .htm
+
 <FilesMatch "\.(html|htm|js|css)$">
 FileETag None
 <ifModule mod_headers.c>
