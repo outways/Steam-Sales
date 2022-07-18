@@ -15,6 +15,7 @@
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'datesales')" id="defaultOpen">Даты распродаж</button>
             <button class="tablinks" onclick="openCity(event, 'liveactions')">Действующие акции</button>
+			<button class="tablinks" onclick="openCity(event, 'salesbuy')">Что купить на распродажеы?</button>
             <button class="tablinks" onclick="openCity(event, 'author')">Автор</button>
           </div>
       </div>
@@ -64,6 +65,13 @@
 	<p>Ссылка: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2832165300" target="_blank">https://steamcommunity.com/sharedfiles/filedetails/?id=2832165300</a></p>
   </div>
   </div>
+  
+<div id="salesbuy" class="tabcontent">
+<h1>Рубрика "Что купить на распродаже".</h1>
+<table include="datasales/salesbuy.html" id="tablesales"> </table>
+<p>Список будет обновлятся, и проверятся раз в день!</p>
+</div>
+
 </div>
 
 <!-- include -->
